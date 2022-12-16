@@ -11,7 +11,7 @@ int main(void){
             // printf("Ingrese costo de lado entre vertices %d y %d :  ", i, j);
             // scanf("%d", &M_Costos[i][j]);
             
-            M_Costos[i][j] = rand()%10;
+            M_Costos[i][j] = rand()%10+1;
 
              if(M_Costos[i][j] != 0){
                 inserta(i, j, M_Costos[i][j], &lista);

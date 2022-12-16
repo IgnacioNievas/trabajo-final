@@ -68,7 +68,8 @@ void kruskal(Grafo **lista){//recibo una lista ordenada
         int y = encuentra(sub, ari->verticeV);
         if(x != y){//si los vertices son distintos
             resultado[j++] = *ari;//guardamos el resultado
-            unir(sub, x, y);//los unimos 
+            unir(sub, x, y);//La idea es colocar siempre un árbol de menor altura debajo de la raíz del árbol más alto. 
+                            
             
         }
         p = p->sig;//recorro la lista
